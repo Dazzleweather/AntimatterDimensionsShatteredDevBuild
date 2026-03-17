@@ -444,7 +444,8 @@ class AntimatterDimensionState extends DimensionState {
     const tier = this.tier;
     if ((EternityChallenge(3).isRunning && tier > 4) ||
       (NormalChallenge(10).isRunning && tier > 6) ||
-      (Laitela.isRunning && tier > Laitela.maxAllowedDimension)) {
+      (Laitela.isRunning && tier > Laitela.maxAllowedDimension)
+       || tier > 7) {
       return false;
     }
     return this.totalAmount.gt(0);
