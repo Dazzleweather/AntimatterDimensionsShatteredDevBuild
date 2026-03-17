@@ -151,7 +151,7 @@ export default {
     </b>
     <div class="l-dimensions-container">
       <InfinityDimensionRow
-        v-for="tier in 8"
+        v-for="tier in 7"
         :key="tier"
         :tier="tier"
       />
