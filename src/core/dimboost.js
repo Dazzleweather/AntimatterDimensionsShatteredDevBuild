@@ -129,8 +129,8 @@ export class DimBoost {
     const allNDUnlocked = EternityMilestone.unlockAllND.isReached;
 
     let newUnlock = "";
-    if (!allNDUnlocked && boosts < DimBoost.maxDimensionsUnlockable - 4) {
-      newUnlock = `unlock the ${boosts + 5}th Dimension`;
+    if (!allNDUnlocked && boosts < DimBoost.maxDimensionsUnlockable - 3) {
+      newUnlock = `unlock the ${boosts + 4}th Dimension`;
     } else if (boosts === 4 && !NormalChallenge(10).isRunning && !EternityChallenge(3).isRunning) {
       newUnlock = "unlock Sacrifice";
     }
