@@ -48,7 +48,9 @@ export function antimatterDimensionCommonMultiplier() {
   multiplier = multiplier.times(Currency.realityMachines.value.powEffectOf(AlchemyResource.force));
 
   if (Pelle.isDoomed) multiplier = multiplier.dividedBy(10);
-
+if (tier == 8){
+  return DC.D0
+}
   return multiplier;
 }
 
