@@ -75,7 +75,7 @@ export class Galaxy {
   }
 
   static get requiredTier() {
-    return NormalChallenge(10).isRunning ? 6 : 8;
+    return NormalChallenge(10).isRunning ? 6 : 7;
   }
 
   static get canBeBought() {
