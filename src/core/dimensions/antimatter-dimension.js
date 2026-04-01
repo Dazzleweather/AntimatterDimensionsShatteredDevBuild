@@ -48,9 +48,6 @@ export function antimatterDimensionCommonMultiplier() {
   multiplier = multiplier.times(Currency.realityMachines.value.powEffectOf(AlchemyResource.force));
 
   if (Pelle.isDoomed) multiplier = multiplier.dividedBy(10);
-if (tier == 8){
-  return DC.D0
-}
   return multiplier;
 }
 
@@ -140,7 +137,9 @@ function applyNDMultipliers(mult, tier) {
 
   multiplier = multiplier.clampMin(1);
 
-  tier == 8 ? return new Decimal(0) : return multiplier;
+  if (tier==8)
+  {return new Decimal(0)} 
+    return multiplier;
 }
 
 function applyNDPowers(mult, tier) {
