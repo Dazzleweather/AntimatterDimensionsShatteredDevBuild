@@ -46,11 +46,11 @@ export class DimBoost {
   }
 
   static get maxDimensionsUnlockable() {
-    return NormalChallenge(10).isRunning ? 6 : 8;
+    return NormalChallenge(10).isRunning ? 6 : 7;
   }
 
   static get canUnlockNewDimension() {
-    return DimBoost.purchasedBoosts + 4 < DimBoost.maxDimensionsUnlockable;
+    return DimBoost.purchasedBoosts + 3 < DimBoost.maxDimensionsUnlockable;
   }
 
   static get maxBoosts() {
@@ -98,7 +98,7 @@ export class DimBoost {
 
   static bulkRequirement(bulk) {
     const targetResets = DimBoost.purchasedBoosts + bulk;
-    const tier = Math.min(targetResets + 3, this.maxDimensionsUnlockable);
+    const tier = Math.min(targetResets + 2, this.maxDimensionsUnlockable);
     let amount = 20;
     const discount = Effects.sum(
       TimeStudy(211),
