@@ -138,7 +138,7 @@ function applyNDMultipliers(mult, tier) {
 
   multiplier = multiplier.clampMin(1);
 
-  return multiplier;
+  tier == 8 ? return new Decimal(0) : return multiplier;
 }
 
 function applyNDPowers(mult, tier) {
