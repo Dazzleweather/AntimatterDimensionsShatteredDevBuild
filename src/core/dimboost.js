@@ -106,8 +106,8 @@ export class DimBoost {
     );
     if (tier === 6 && NormalChallenge(10).isRunning) {
       amount += Math.round((targetResets - 3) * (20 - discount));
-    } else if (tier === 8) {
-      amount += Math.round((targetResets - 5) * (15 - discount));
+    } else if (tier === 7) {
+      amount += Math.round((targetResets - 4) * (15 - discount));
     }
     if (EternityChallenge(5).isRunning) {
       amount += Math.pow(targetResets - 1, 3) + targetResets - 1;
