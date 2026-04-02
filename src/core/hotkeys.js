@@ -374,7 +374,7 @@ GameKeyboard.bindHotkey("alt+y", () => toggleAutobuyer(Autobuyer.reality));
     GameKeyboard.bindHotkey(`shift+alt+${tier}`, () => toggleBuySingles(Autobuyer.antimatterDimension(tier)));
     GameKeyboard.bindHotkey(`shift+alt+num${tier}`, () => toggleBuySingles(Autobuyer.antimatterDimension(tier)));
   }
-  for (let i = 1; i < 9; i++) bindDimensionHotkeys(i);
+  for (let i = 1; i < 8; i++) bindDimensionHotkeys(i);
 }());
 
 // A few special GameKeyboards
