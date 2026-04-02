@@ -28,19 +28,19 @@ import { GameKeyboard } from "./keyboard";
 export const shortcuts = [
   {
     name: "Toggle Autobuyers",
-    keys: ["a"],
+    keys: ["b"],
     type: "bindHotkey",
     function: () => keyboardToggleAutobuyers(),
     visible: true
   }, {
     name: "Buy one Tickspeed",
-    keys: ["shift", "t"],
+    keys: ["shift", "a"],
     type: "bindRepeatableHotkey",
     function: () => buyTickSpeed(),
     visible: true
   }, {
     name: "Buy max Tickspeed",
-    keys: ["t"],
+    keys: ["a"],
     type: "bindRepeatableHotkey",
     function: () => buyMaxTickSpeed(),
     visible: true
@@ -49,12 +49,6 @@ export const shortcuts = [
     keys: ["m"],
     type: "bindRepeatableHotkey",
     function: () => maxAll(),
-    visible: true
-  }, {
-    name: "Dimensional Sacrifice",
-    keys: ["s"],
-    type: "bindRepeatableHotkey",
-    function: () => sacrificeBtnClick(),
     visible: true
   }, {
     name: "Dimension Boost",
@@ -70,13 +64,13 @@ export const shortcuts = [
     visible: false
   }, {
     name: "Antimatter Galaxy",
-    keys: ["g"],
+    keys: ["s"],
     type: "bindRepeatableHotkey",
     function: () => manualRequestGalaxyReset(true),
     visible: true
   }, {
     name: "Single Antimatter Galaxy",
-    keys: ["shift", "g"],
+    keys: ["shift", "s"],
     type: "bindRepeatableHotkey",
     function: () => manualRequestGalaxyReset(false),
     visible: false
@@ -157,13 +151,13 @@ export const shortcuts = [
     visible: () => Player.automatorUnlocked
   }, {
     name: "Toggle Black Hole",
-    keys: ["b"],
+    keys: ["g"],
     type: "bindHotkey",
     function: () => BlackHoles.togglePause(),
     visible: () => PlayerProgress.realityUnlocked()
   }, {
     name: "Toggle Continuum",
-    keys: ["alt", "a"],
+    keys: ["alt", "m"],
     type: "bindHotkey",
     function: () => keyboardToggleContinuum(),
     visible: () => Laitela.continuumUnlocked
@@ -293,12 +287,11 @@ export const shortcuts = [
     visible: false
   }, {
     name: "Doesn't exist",
-    keys: ["9"],
+    keys: ["8"],
     type: "bind",
     function: () => SecretAchievement(41).unlock(),
     visible: false
-  },
-  {
+  }, {
     name: "Adjust Autobuyers",
     keys: ["mod", "alt", "a"],
     type: "bind",
