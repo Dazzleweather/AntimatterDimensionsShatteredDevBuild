@@ -105,7 +105,7 @@ export class DimBoost {
       TimeStudy(222)
     );
     if (tier === 6 && NormalChallenge(10).isRunning) {
-      amount += Math.round((targetResets - 3) * (20 - discount));
+      amount += Math.round((targetResets - 3) * (25 - discount));
     } else if (tier === 7) {
       amount += Math.round((targetResets - 3) * (15 - discount));
     }
@@ -135,7 +135,7 @@ export class DimBoost {
 
     const formattedMultText = `give a ${formatX(DimBoost.power, 2, 1)} multiplier `;
     let dimensionRange = `to the 1st Dimension`;
-    if (boosts > 0) dimensionRange = `to Dimensions 1-${Math.min(boosts + 1, 8)}`;
+    if (boosts > 0) dimensionRange = `to Dimensions 1-${Math.min(boosts + 1, 7)}`;
     if (boosts >= DimBoost.maxDimensionsUnlockable - 1) dimensionRange = `to all Dimensions`;
 
     let boostEffects;
@@ -163,7 +163,7 @@ export class DimBoost {
   }
 
   static get startingDimensionBoosts() {
-    if (InfinityUpgrade.skipResetGalaxy.isBought) return 4;
+    if (InfinityUpgrade.skipResetGalaxy.isBought) return 3;
     if (InfinityUpgrade.skipReset3.isBought) return 3;
     if (InfinityUpgrade.skipReset2.isBought) return 2;
     if (InfinityUpgrade.skipReset1.isBought) return 1;
