@@ -130,9 +130,7 @@ export class DimBoost {
 
     let newUnlock = "";
     if (!allNDUnlocked && boosts < DimBoost.maxDimensionsUnlockable - 3) {
-      newUnlock = `unlock the ${boosts + 4}th Dimension`;
-    } else if (boosts === 4 && !NormalChallenge(10).isRunning && !EternityChallenge(3).isRunning) {
-      newUnlock = "unlock Sacrifice";
+      newUnlock = `unlock the ${boosts + 3}th Dimension`;
     }
 
     const formattedMultText = `give a ${formatX(DimBoost.power, 2, 1)} multiplier `;
